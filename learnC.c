@@ -23,6 +23,7 @@ printf("Conta fino a: %d", *puntatore); // dereference pointer
   Condition: Control program flow based on logical expressions.
 */
 
+printf("\n");
 /*
   IF: Execute code only if the condition evaluates to true.
 */
@@ -36,6 +37,7 @@ printf("Numero non esiste\n");
   Iteration: Repeat instructions while a condition holds.
 */
 
+printf("\n");
 /*
   WHILE: Execute repeatedly while the condition remains true.
 */
@@ -45,6 +47,7 @@ while(x < numero){
   x++;
 }
 
+printf("\n");
 /*
   DO-WHILE: Execute at least once, then repeat if condition is true.
 */
@@ -54,6 +57,19 @@ do{
  y++;
 } while(y < numero);
 
+printf("\n");
+/*
+  UNTIL: Repeat instructions until a condition becomes true.
+  (Not native in C, implemented using negated while condition)
+*/
+
+int y = 0;
+while(!(y >= numero)){
+  printf("%d ", y);
+  y++;
+}
+
+printf("\n");
 /*
   FOR: Compact loop structure with initialization, condition, and update.
 */
